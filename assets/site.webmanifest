@@ -1,7 +1,7 @@
 {
   "name": "Jimmy Ganteng",
   "short_name": "JimmyGanteng",
-  "start_url": "index.html",
+  "start_url": "/",
   "scope": ".",
   "description": "Congratulations! You found me! I am Jimmy and let's solve problems together!",
   "icons": [

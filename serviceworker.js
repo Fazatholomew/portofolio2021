@@ -4,7 +4,7 @@ self.addEventListener("install", function (e) {
   e.waitUntil(
     caches.open(staticCacheName).then(function (cache) {
       return cache.addAll(["./index.html",
-        "./assets/images/background.jpg", "./assets/images/background1.jpg.jpg", "assets/images/background.jpg.jpg"]);
+        "images/background.jpg", "images/background1.jpg", "images/profile.jpg", "images/resume.pdf"]);
     })
   );
 });

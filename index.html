@@ -1,121 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta name="theme-color" content="black">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="Congratulations! You found me! I am Jimmy and let's solve problems together!" name="description">
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jimmy.</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-  <link href="./assets/favicon.ico" rel="icon">
-  <link rel="manifest" href="./assets/site.webmanifest">
-  <title>Jimmy: Present</title>
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
 
-  <link href="./main.3f6952e4.css" rel="stylesheet">
-  <meta property="og:title" content="Jimmy Ganteng: Present" />
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- favicons
+    ================================================== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link href="favicon.ico" rel="icon">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#ffffff"/>
+  <meta name="description" content="A little things about Jimmy Hikmatullah.">
+
+  <meta property="og:title" content="Jimmy." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://jimmyganteng.com" />
-  <meta property="og:image" content="https://jimmyganteng.com/assets/images/2.jpg" />
+  <meta property="og:image" content="https://jimmyganteng.com/images/background.jpg" />
   <meta property="og:site_name" content="Jimmy Ganteng">
 
-  <meta name="twitter:title" content="Jimmy Ganteng: Present">
-  <meta name="twitter:description" content="Congratulations! You found me! I am Jimmy and let's solve problems together!">
-  <meta name="twitter:image" content="https://jimmyganteng.com/assets/images/2.jpg">
+  <meta name="twitter:title" content="Jimmy.">
+  <meta name="twitter:description"
+    content="Congratulations! You found me! I am Jimmy and let's solve problems together!">
+  <meta name="twitter:image" content="https://jimmyganteng.com/images/background.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="Visit Jimmy Ganteng!">
 
 </head>
 
-<body class="minimal">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
-  <!-- Add your content of header -->
-  <header>
-    <nav class="navbar  navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
-          aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav ">
-            <li><a href="./index.html" title="">Present</a></li>
-            <li><a href="./works.html" title="">Past</a></li>
-            <li><a href="./about.html" title="">Future</a></li>
-          </ul>
+<body id="top">
 
 
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container"
-    style="background-image: url('./assets/images/background.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hey,<br>
-                <span id="typed-strings">
-                  <span>I'm Jimmy!</span>
-                  <span>A Rendang Lover</span>
-                  <span>Disguise as Web Developer</span>
-                  <span>and Data Analyst.</span>
-                  <span>Enjoy!</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
-  <footer class="footer-container text-center">
-    <p class="inverse">Copyright © 2020 Jimmy 'Bang Koboi' <br> Buatan Bandung <br></p>
-  </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      type();
-      movingBackgroundImage();
-    });
-    window.addEventListener('load', () => {
-      registerSW();
-    });
 
-    // Register the Service Worker
-    async function registerSW() {
-      if ('serviceWorker' in navigator) {
-        try {
-          await navigator
-            .serviceWorker
-            .register('./serviceworker.js');
-        }
-        catch (e) {
-          console.log('SW registration failed');
-          console.log(e);
+  <!-- page wrap
+    ================================================== -->
+  <div id="page" class="s-pagewrap ss-home">
+
+
+    <!-- # site header 
+        ================================================== -->
+    <header id="masthead" class="s-header">
+
+      <div class="s-header__branding">
+        <p class="site-title">
+          <a href="index.html" rel="home">Jimmy.</a>
+        </p>
+      </div>
+
+      <div class="row s-header__navigation">
+
+        <nav class="s-header__nav-wrap">
+
+          <h3 class="s-header__nav-heading">Navigate to</h3>
+
+          <ul class="s-header__nav">
+            <li><a href="https://github.com/Fazatholomew" title="Github"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg></a></li>
+            <li><a href="https://www.linkedin.com/in/faza-hikmatullah-48bb54152/" title="LinkedIn"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg></a></li>
+            <li><a href="https://www.youtube.com/@kitangoding1739" title="Youtube"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg></a></li>
+          </ul> <!-- end s-header__nav -->
+
+        </nav> <!-- end s-header__nav-wrap -->
+
+      </div> <!-- end s-header__navigation -->
+
+      <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- # site-content
+        ================================================== -->
+    <section id="content" class="s-content">
+
+
+      <!-- hero -->
+      <div class="hero">
+
+        <div class="hero__slider swiper-container">
+
+          <div class="swiper-wrapper">
+            <article class="hero__slide swiper-slide">
+              <div class="hero__entry-image" style="background-image: url('images/background.jpg');"></div>
+              <div class="hero__entry-text">
+                <div class="hero__entry-text-inner">
+                  <div class="hero__entry-meta">
+                    <span class="cat-links">
+                      <a href="">What's up y'all!</a>
+                    </span>
+                  </div>
+                  <h2 class="hero__entry-title">
+                    <a href="">
+                      I am Jimmy.
+                    </a>
+                  </h2>
+                  <p class="hero__entry-desc">
+                    I love solving problems so much and a lot of times, programming/coding is a useful tool to do so.
+                    That's why I build apps, websites, and youtube videos to ease a little bit of pain that people
+                    experience.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="hero__slide swiper-slide">
+              <div class="hero__entry-image"
+                style="background-image: url('images/background1.jpg'); background-position: 40%"></div>
+              <div class="hero__entry-text">
+                <div class="hero__entry-text-inner">
+                  <div class="hero__entry-meta">
+                    <span class="cat-links">
+                      <a href="images/resume.pdf">Projects</a>
+                    </span>
+                  </div>
+                  <h2 class="hero__entry-title">
+                    <a href="images/resume.pdf">
+                      A little stare into the past.
+                    </a>
+                  </h2>
+                  <p class="hero__entry-desc">
+                    Doing something bigger than myself has been a great theme for my projects. They are proofs that I
+                    can
+                    do something that I love while also help solve problems. <br> One line of code at a time.
+                  </p>
+                  <a class="hero__more-link" href="images/resume.pdf">Resume</a>
+                </div>
+              </div>
+            </article>
+            <article class="hero__slide swiper-slide">
+              <div class="hero__entry-image" style="background-image: url('images/profile.jpg');"></div>
+              <div class="hero__entry-text">
+                <div class="hero__entry-text-inner">
+                  <div class="hero__entry-meta">
+                    <span class="cat-links">
+                      <a href="mailto:jimmeytholomew@gmail.com">Me</a>
+                    </span>
+                  </div>
+                  <h2 class="hero__entry-title">
+                    <a href="mailto:jimmeytholomew@gmail.com">
+                      Dreams up high.
+                    </a>
+                  </h2>
+                  <p class="hero__entry-desc">
+                    I believe, one day, all Indonesians will be proud of themself as Indonesian because Indonesia can
+                    provide equity in wealth, education, and rights. I urge you to scale this up to the entire world.
+                    So, let's work together!
+                  </p>
+                  <a class="hero__more-link" href="mailto:jimmeytholomew@gmail.com">Collaborate</a>
+                </div>
+              </div>
+            </article>
+          </div> <!-- swiper-wrapper -->
+
+          <div class="swiper-pagination"></div>
+
+        </div> <!-- end hero slider -->
+
+        <a href="#bricks" class="hero__scroll-down smoothscroll">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M10.25 6.75L4.75 12L10.25 17.25"></path>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M19.25 12H5"></path>
+          </svg>
+          <span>Scroll</span>
+        </a>
+
+      </div> <!-- end hero -->
+
+
+      <!--  masonry -->
+      <div id="bricks" class="bricks">
+
+        <div class="masonry">
+
+          <div id="renderBricks" class="bricks-wrapper" data-animate-block>
+
+            <div class="grid-sizer"></div>
+
+          </div> <!-- end bricks-wrapper -->
+
+        </div> <!-- end masonry-->
+
+    </section> <!-- end s-content -->
+
+
+    <!-- # site-footer
+        ================================================== -->
+    <footer id="colophon" class="s-footer">
+
+      <div class="row s-footer__bottom">
+        <div class="column lg-12 md-12 tab-12">
+          <div class="ss-copyright">
+            <span>© Copyright Jimmy Hikmatullah 2024</span>
+            <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution <a
+                href="https://themewagon.com">ThemeWagon</a></span>
+          </div>
+        </div>
+
+      </div> <!-- end s-footer__bottom -->
+
+      <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M17.25 10.25L12 4.75L6.75 10.25" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 19.25V5.75" />
+          </svg>
+        </a>
+
+    </footer><!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        registerSW();
+      });
+
+      // Register the Service Worker
+      async function registerSW() {
+        if ('serviceWorker' in navigator) {
+          try {
+            await navigator
+              .serviceWorker
+              .register('./serviceworker.js');
+          }
+          catch (e) {
+            console.log('SW registration failed');
+            console.log(e);
+          }
         }
       }
-    }
-  </script>
+    </script>
 
 
-  <script type="text/javascript" src="./main.70a66962.js"></script>
 </body>
 
 </html>

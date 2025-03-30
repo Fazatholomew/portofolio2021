@@ -4041,7 +4041,9 @@ body.search-is-visible .s-header__search-inner {
     font-size      : 1.15rem;
     text-transform : uppercase;
     letter-spacing : .3em;
-    border-bottom  : 1px solid transparent;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid;
 }
 
 .hero__more-link:focus,

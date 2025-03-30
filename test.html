@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js dark-version">
+
+<head>
+  <!-- Basic page needs -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jimmy. (Dark Mode)</title>
+
+  <!-- CSS -->
+  <!-- reference the same CSS files, but we override them for dark mode -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Overriding styles for Dark Mode Only -->
+  <style>
+    :root {
+      /* purely dark theme, removing all light references */
+      --color-body: #141415;
+      --color-text: #f9fafb;
+      --color-placeholder: #767b7f; /* slightly lighter for placeholders */
+
+      /* override theme-based variables from styles.css, ensuring everything is dark */
+      --color-preloader-bg: #141415;
+      --color-loader: #f9fafb;
+      --color-loader-light: rgba(249, 250, 251, 0.1);
+
+      --color-btn: #3b3d40;
+      --color-btn-text: #f9fafb;
+      --color-btn-hover: #27292a;
+      --color-btn-hover-text: #fff;
+
+      --color-btn-primary: #04776F;
+      --color-btn-primary-text: #ffffff;
+      --color-btn-primary-hover: #DD614A;
+      --color-btn-primary-hover-text: #ffffff;
+
+      --color-header-bg: #141415;
+      --color-border: rgba(255, 255, 255, 0.1);
+      --color-footer-bg: #27292a;
+    }
+
+    body {
+      background-color: var(--color-body) !important;
+      color: var(--color-text) !important;
+    }
+
+    /* remove or override any leftover bright backgrounds from styles.css */
+    .s-header,
+    .s-footer,
+    #masthead,
+    .s-header__nav-wrap {
+      background-color: var(--color-header-bg) !important;
+      color: var(--color-text) !important;
+    }
+
+    /* text links in nav, or anywhere else, forced to bright text color */
+    a {
+      color: var(--color-text) !important;
+    }
+
+    a:hover {
+      color: var(--color-btn-primary-hover-text) !important;
+    }
+
+    .btn,
+    .s-header__menu-toggle,
+    .s-header__search-trigger {
+      background-color: var(--color-btn-primary) !important;
+      color: var(--color-btn-primary-text) !important;
+    }
+
+    .btn:hover,
+    .s-header__menu-toggle:hover,
+    .s-header__search-trigger:hover {
+      background-color: var(--color-btn-primary-hover) !important;
+      color: var(--color-btn-primary-hover-text) !important;
+    }
+
+    /* hero area forced dark background */
+    .s-hero {
+      background: #1e1e1e !important;
+      color: var(--color-text) !important;
+    }
+
+    /* for columns, rows, sections, etc. override background to transparent or dark */
+    .column,
+    .row,
+    .s-content,
+    .masonry .entry {
+      background-color: transparent !important;
+      color: var(--color-text) !important;
+    }
+
+    .s-footer {
+      background-color: var(--color-footer-bg) !important;
+      color: var(--color-text) !important;
+    }
+
+    .s-footer a {
+      color: var(--color-text) !important;
+    }
+
+    input,
+    textarea {
+      background-color: #2a2a2d !important;
+      color: var(--color-text) !important;
+      border: 1px solid var(--color-border) !important;
+    }
+
+    /* remove references to light backgrounds / transitions that lighten the page */
+    .ss-home {
+      background-color: var(--color-body) !important;
+    }
+  </style>
+
+  <meta name="description" content="Jimmy's dark mode portfolio." />
+  <meta property="og:title" content="Jimmy Dark Mode" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://jimmyganteng.com" />
+  <meta property="og:site_name" content="Jimmy Ganteng Dark" />
+
+</head>
+
+<body id="top" class="ss-home">
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- page wrap -->
+  <div id="page" class="s-pagewrap ss-home">
+    <!-- header -->
+    <header id="masthead" class="s-header">
+      <div class="s-header__branding">
+        <p class="site-title">
+          <a href="index.html" rel="home">Jimmy (Dark Mode)</a>
+        </p>
+      </div>
+      <div class="row s-header__navigation">
+        <nav class="s-header__nav-wrap">
+          <h3 class="s-header__nav-heading">Navigate to</h3>
+          <ul class="s-header__nav">
+            <li><a href="https://github.com/Fazatholomew">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/faza-hikmatullah-48bb54152">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@kitangoding1739">YouTube</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="s-hero">
+      <div class="s-hero__content">
+        <h1>Welcome to Dark Jimmy's Domain</h1>
+        <p>Everything is now in dark mode—no more bright backgrounds in sight.</p>
+      </div>
+    </section>
+
+    <!-- main content -->
+    <section class="s-content">
+      <div class="row">
+        <div class="column">
+          <h2>About Me</h2>
+          <p>Now permanently in the dark side. I handle coding, problem-solving, and creative endeavors without blinding your eyes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-content" id="portfolio">
+      <div class="row">
+        <div class="column">
+          <h2>Portfolio</h2>
+          <p>A glimpse of some of my works, all showcased in a moody, nighttime aesthetic.</p>
+        </div>
+      </div>
+      <!-- Additional portfolio items or masonry grid goes here -->
+    </section>
+
+    <section class="s-content" id="contact">
+      <div class="row">
+        <div class="column">
+          <h2>Contact</h2>
+          <p>Drop a message—it's always nighttime here!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="colophon" class="s-footer">
+      <div class="row">
+        <div class="column">
+          <p>&copy; 2025 Jimmy. Dark mode all the way.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
